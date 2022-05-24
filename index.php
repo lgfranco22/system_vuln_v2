@@ -40,7 +40,7 @@
     </style>
 </head>
 
-<body>
+<body onload="removeLimit()">
     <header>
         <h1>Produtos</h1>
     </header>
@@ -48,7 +48,7 @@
         <div id="input">
             <form method="post">
                 pesquisa
-                <input type="text" name="id" id="" maxlength="10">
+                <input type="text" name="id" id="id" maxlength="10">
                 <input type="submit" value="pesquisar">
             </form>
         </div>
@@ -79,6 +79,7 @@
         ?>
     </nav>
     <footer><p>Aplicação vulneravel para testes de sql injection</p></footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
